@@ -9,6 +9,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.db import IntegrityError
 
+def old(request):
+    return render(request, "spreadsheet/old_patient.html") 
 
 def login_view(request):
     if request.method == "POST":
